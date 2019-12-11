@@ -1,0 +1,129 @@
+.song-sheet-list-box{
+  position: absolute;
+  background: #fff;
+  top: 48vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+  padding: 30rpx;
+  color:#333;
+}
+.top-play-and-collection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-icon{
+  width:40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+}
+.play-all-text{
+  display: flex;
+  align-items: center;
+}
+.list-count{
+  color:#999;
+  font-size:28rpx;
+}
+.collection{
+  height:80rpx;
+  width: 240rpx;
+  background: #ff3a3a;
+  color:#fff;
+  border-radius: 60rpx;
+  font-size:26rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus-icon{
+  margin-right:10rpx;
+  width:26rpx;
+  height:26rpx;
+}
+.sheet-list-box{
+
+}
+
+.sheet-list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:40rpx;
+}
+.sheet-list-item-left{
+  display: flex;
+  align-items: center;
+}
+.song-name-box{
+  margin-left:30rpx;
+}
+.song-name{
+}
+.solo-icon{
+  font-size:14rpx;
+  border: 1px solid #ff3a3a;
+  color:#ff3a3a;
+  margin-right:6rpx;
+  font-weight: bold;
+}
+.sq-icon{
+  font-size:14rpx;
+  border: 1px solid #fe6931;
+  color:#fe6931;
+   padding: 0 5rpx; 
+   font-weight: bold;
+   margin-right: 6rpx;
+}
+.author-box{
+  display: flex;
+  align-items: center;
+  margin-top:10rpx;
+  color:#8a8a8a;
+}
+.number{
+  margin-right:20rpx;
+  margin-left:10rpx;
+  color:#999;
+  text-align: right;
+  width:10rpx;
+}
+.singer-name,.album-name{
+  font-size:24rpx;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#999;
+}
+.album-name{
+  overflow: hidden;
+  max-width:320rpx;
+  height: 30rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.singer-name{
+}
+.mv-and-more-icon{
+  display: flex;
+  align-items: center;
+}
+
+.mv-icon,.more-icon{
+  width:40rpx;
+  height:40rpx;
+}
+.mv-icon{
+  margin-right:40rpx;
+  height:50rpx;
+  width:50rpx;
+}

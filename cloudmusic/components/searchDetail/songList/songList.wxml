@@ -1,0 +1,15 @@
+  <view class="songlist-box" wx:if="{{playlists.length > 0 && loading_finished}}">
+    <view class="songlist-item" wx:for="{{playlists}}" wx:key="{{item.id}}" bindtap="goToRecommandList" data-id="{{item.id}}">
+      <image src="{{item.coverImgUrl}}" class="songlist-item-cover"></image>
+      <view class="songlist-item-right">
+        <view class="songlist-item-right-songlist-name">{{item.name}}</view>
+        <view class="songlist-item-other-info">
+          <view>{{item.trackCount}}首</view>
+          <view>by{{item.creator.nickname}}</view>
+          <view>播放{{playCount}}次</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="songlist-box" wx:if="{{playlists.length <= 0 && loading_finished}}">
+  </view>

@@ -1,0 +1,9 @@
+<view>
+  <searchInput></searchInput>
+  <banner></banner>
+  <recommand></recommand>
+  <dishesAndSongs></dishesAndSongs>
+  <newSongsNewForces></newSongsNewForces>
+  <recommendRadioStation></recommendRadioStation>
+  <recommendedProgram></recommendedProgram>
+</view>

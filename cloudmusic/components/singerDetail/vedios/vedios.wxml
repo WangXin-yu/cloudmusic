@@ -1,0 +1,10 @@
+<view class="vedios-box">
+  <view class="title">全部</view>
+  <view wx:for="{{mvs}}" wx:key="{{index.id}}" class="mv-item">
+    <image src="{{item.imgurl}}" class="mv-cover"></image>
+    <view class="publish-time-and-size">
+      <view>{{item.name}}</view>
+      <view class="publish-time">{{item.publishTime}}</view>
+    </view>
+  </view>
+</view>

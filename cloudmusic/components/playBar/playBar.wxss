@@ -1,0 +1,53 @@
+.playBar{
+  width: 100%;
+  height: 120rpx;
+  border-top: 1rpx solid #eee;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.song-info{
+  display: flex;
+}
+.current_song_cover{
+  width: 90rpx;
+  height: 90rpx;
+    border-radius: 50%;
+}
+.song-name{
+  font-size:30rpx;
+  color:#3a3a3a;
+}
+.singer-name{
+  font-size:22rpx;
+  color: #808080;
+  margin-top: 6rpx;
+}
+.song-and-singer-name{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rpx;
+}
+.icon-box{
+  display: flex;
+  align-items: center;
+}
+.play-icon{
+  width: 70rpx;
+  height: 70rpx;
+}
+.pause-icon{
+  width: 70rpx;
+  height: 70rpx;
+}
+.songlist-icon{
+   width: 80rpx;
+  height: 80rpx;
+  margin-left: 20rpx;
+}

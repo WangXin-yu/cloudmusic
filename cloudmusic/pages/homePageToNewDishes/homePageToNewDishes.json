@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "playBar":"../../components/playBar/playBar"
+  },
+  "navigationStyle":"custom"
+}

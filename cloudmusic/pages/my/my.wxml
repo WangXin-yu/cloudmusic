@@ -1,0 +1,39 @@
+<!-- 如果用户未登录提示用户登录 -->
+<view wx:if="{{!login_state}}" class="login-btn-box">
+  <view class="tips">您还没有登录喔</view>
+  <view class="login-btn" bindtap="goToLoginAndRegister">立即登录</view>
+</view>
+<!-- 已登录，显示用户的个人中西 -->
+<view wx:else>
+  <view class="user-info-box">
+    <view class="left">
+      <image class="user-cover" src="{{user_info.profile.avatarUrl}}"></image>
+      <view class="username-and-level-box">
+        <view class="username">{{user_info.account.userName}}</view>
+        <view class="user-level">Lv:{{user_info.account.type}}</view>
+      </view>
+    </view>
+    <view class="sign-in">签到</view>
+  </view>
+  <view class="event-follows-followeds-edit">
+    <view class="event">
+      <view class="count">{{user_info.profile.eventCount}}</view>
+      <view>动态</view>
+    </view>
+    <view class="follows">
+      <view class="count">{{user_info.profile.follows}}</view>
+      <view>关注</view>
+    </view>
+    <view class="followeds">
+      <view class="count">{{user_info.profile.followeds}}</view>
+      <view>粉丝</view>
+    </view>
+    <view class="edit">
+      <image src="../../images/my/edit-icon.png" class="edit-icon"></image>
+      <view bindtap="goToEdit">编辑资料</view>
+    </view>
+  </view>
+  <view class="equit" bindtap="exit">
+    退出登录
+  </view>
+</view>

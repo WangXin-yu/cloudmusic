@@ -1,0 +1,46 @@
+.sort-box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+  align-items: center;
+}
+.sort-type{
+  font-weight: bold;
+
+}
+.sort-icon-text{
+  font-size:30rpx;
+  display: flex;
+  align-items: center;
+}
+.sort-icon{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.album-box{
+  padding: 30rpx;
+}
+.albums-cover{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.album-bg{
+  width: 30rpx;
+  height: 120rpx;
+}
+.hot-albums-item{
+  display: flex;
+  margin: 20rpx 0;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.publish-time-and-size{
+  font-size:24rpx;
+  color:#808080;
+  margin-top: 14rpx;
+}

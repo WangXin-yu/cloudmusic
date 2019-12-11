@@ -1,0 +1,61 @@
+<view class="top-search-box">
+  <view class="title">
+    音乐馆
+  </view>
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:change="onSearch" bind:focus="onFocus" shape="round">
+    <view slot="action" bind:tap="onSearch" class="search-text">搜索</view>
+  </van-search>
+  <view>
+    <image src="../../../images/homePageIcons/music-icon.png" lazy-load class="music-icon"></image>
+  </view>
+</view>
+<van-popup show="{{ show_popup }}" position="right" custom-style="height: 100%;width:100%" bind:close="onClose">
+  <view class="popup-box">
+    <!-- 搜索框部分 -->
+    <view class="popup-top-search-box">
+      <image src="../../../images/homePageIcons/go-back.png" bindtap="goback" class="go-back"></image>
+      <input class="search-input" bindblur="hideSearchSuggestions" placeholder="NINEONE" value="{{input_value}}" bindinput="debounce" bindconfirm="onConfirm"></input>
+      <image src="../../../images/homePageIcons/singer.png" class="singer-icon"></image>
+    </view>
+    <!-- 显示搜索建议面板 -->
+    <view class="search-suggestion-panel" wx:if="{{show_search_suggestion}}">
+      <view class="search-suggestion-text">搜索"{{input_value}}"</view>
+      <view wx:for="{{search_suggestion_arr}}" bindtap="goToSearchDetail" data-key_words="{{item.name}}}" wx:key="{{index.id}}"  class="search-suggestion-item">
+      <image src="../../../images/homePageIcons/search-input-icon.png" class="search-icon"></image>
+        {{item.name}}
+      </view>
+    </view>
+    <view class="adv-box">
+      <image src="../../../images/homePageIcons/adv.png" mode="scaleToFill" class="adv"></image>
+    </view>
+    <!-- 历史记录部分 -->
+    <view class="history-box" wx:if="{{history.length > 0}}">
+      <view class="history-top">
+        <view class="history-text">历史记录</view>
+        <image src="../../../images/homePageIcons/trash.png" class="trash" bindtap="deleteHistory"></image>
+      </view>
+      <view class="history-content">
+        <view class="history-item" wx:for="{{history}}" wx:key="{{item.id}}">
+          {{item}}
+        </view>
+      </view>
+    </view>
+    <!-- 热搜榜 -->
+    <view class="hot-search-rank">
+      <view class="title">热搜榜</view>
+      <view class="hot-list">
+        <view wx:for="{{hots}}" wx:key="{{index.id}}" class="hot-item" bindtap="goToSearchDetail" data-key_words="{{item.searchWord}}">
+          <view class="left">
+            <view class="number {{index < 3 ? 'red' : ''}}">{{index+1}}</view>
+            <view>
+              <view class="{{index < 3 ? 'bold':''}}">{{item.searchWord}}</view>
+              <view class="hot-item-content">{{item.content}}</view>
+            </view>
+          </view>
+
+          <view class="score">{{item.score}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</van-popup>

@@ -1,0 +1,73 @@
+.popup-top-search-box {
+  padding: 20rpx 30rpx;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.go-back {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.singer-icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.search-input {
+  width: 75%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #3a3a3a;
+  margin-bottom: 20rpx;
+}
+
+.tabBar-box {
+  display: flex;
+  width: 100%;
+  height: 78rpx;
+  border-bottom: 1rpx solid #eee;
+  justify-content: space-around;
+  white-space: nowrap;
+}
+
+.tabBar-item {
+  display: inline-block;
+  font-size: 26rpx;
+  margin: 0 40rpx;
+  padding-bottom: 10rpx;
+  padding: 20rpx 0;
+}
+
+.red {
+  border-bottom: 4rpx solid #ff3a3a;
+  color: #ff3a3a;
+}
+.search-suggestion-panel{
+  position: absolute;
+  width: 80%;
+  background: #fff;
+  left: 36rpx;
+  top: 120rpx;
+  box-shadow: 0 0 20rpx #ccc;
+  z-index: 11111;
+  color: #3a3a3a;
+  font-size:28rpx;
+}
+.search-suggestion-text{
+  padding: 20rpx;
+  color: lightblue;
+  border-bottom: 1px solid #eee;
+}
+.search-suggestion-item{
+   padding: 20rpx;
+     border-bottom: 1px solid #eee;
+     display: flex;
+     align-items: center;
+}
+.search-icon{
+  width:40rpx;
+  height:40rpx;
+  margin-right: 20rpx;
+}

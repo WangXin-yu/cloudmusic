@@ -1,0 +1,18 @@
+<view class="album-box" wx:if="{{loading_finished && hot_albums.length > 0}}">
+  <view class="sort-box">
+    <view class="sort-type">按发行时间排序</view>
+    <view class="sort-icon-text">
+      <image src="../../../images/singerDetailIcons/sort.png" class="sort-icon"></image>
+      <view>排序</view>
+    </view>
+  </view>
+
+  <view wx:for="{{hot_albums}}" wx:key="{{index.id}}" class="hot-albums-item">
+    <image src="{{item.picUrl}}" class="albums-cover"></image>
+    <image src="../../../images/searchDetailsIcons/comprehensive/album-bg.png" class="album-bg"></image>
+    <view class="right">
+      <view>{{item.name}}</view>
+      <view class="publish-time-and-size">{{item.publishTime}}歌曲{{item.size}}</view>
+    </view>
+  </view>
+</view>

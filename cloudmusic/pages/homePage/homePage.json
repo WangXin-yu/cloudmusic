@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "searchInput":"../../components/homePage/searchInput/searchInput",
+    "banner":"../../components/homePage/banner/banner",
+    "recommand":"../../components/homePage/recommand/recommand",
+    "dishesAndSongs": "../../components/homePage/dishesAndSongs/dishesAndSongs",
+    "newSongsNewForces": "../../components/homePage/newSongsNewForces/newSongsNewForces",
+    "recommendRadioStation":
+    "../../components/homePage/recommendRadioStation/recommendRadioStation",
+    "recommendedProgram": "../../components/homePage/recommendedProgram/recommendedProgram"
+   
+  }
+}

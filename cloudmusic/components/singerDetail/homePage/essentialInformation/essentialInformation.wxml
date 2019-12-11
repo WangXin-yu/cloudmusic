@@ -1,0 +1,16 @@
+<van-popup show="{{ show_popup }}" position="right" custom-style="height: 100%;width:100%" bind:close="onClose">
+  <view class="essential-information-box">
+    <view class="go-back-and-title">
+      <image src="../../../../images/homePageIcons/go-back.png" class="go-back-icon" bindtap="goBack"></image>
+      <view>歌手简介</view> 
+    </view>
+    <view class="brief-introduction">
+      <view class="title">{{singer_info.name}}简介</view>
+      <view class="content">{{singer_info.briefDesc}}</view>
+    </view>
+    <view wx:for="{{introduction}}" wx:key="{{index.id}}">
+      <view class="title">{{item.ti}}</view>
+      <view class="content">{{item.txt}}</view>
+    </view>
+  </view>
+</van-popup>

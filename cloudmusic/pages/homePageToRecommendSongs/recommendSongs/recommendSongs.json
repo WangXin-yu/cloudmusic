@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "songSheetList":"../../../components/songList/songSheetList/songSheetList",
+    "playBar":"../../../components/playBar/playBar"
+  },
+  "navigationStyle": "custom"
+}

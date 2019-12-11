@@ -1,0 +1,32 @@
+<view class="user-box" wx:if="{{user_data.length > 0 && loading_finished}}">
+  <view class="singer-box" wx:for="{{user_data}}" wx:key="{{index.id}}">
+    <view class="left">
+      <image src="{{item.avatarUrl}}" class="singer-cover-singer-part"></image>
+      <view class="singer-detail">
+        <view class="singer-name-box username-box">
+          <view class="chinese-name username">
+            <view class="nickname">{{item.nickname}}-</view>
+            <view wx:if="{{item.gender === 1}}">
+              <!-- 显示男性图标 -->
+              <image src="../../../images/searchDetailsIcons/comprehensive/male.png" class="gender-icon"></image>
+            </view>
+            <view wx:else>
+              <!-- 显示女性图标 -->
+              <image src="../../../images/searchDetailsIcons/comprehensive/male.png" class="gender-icon"></image>
+            </view>
+          </view>
+          <view class="signature">{{item.signature}}</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="follow-btn">
+      <image src="../../../images/searchDetailsIcons/comprehensive/add-follows.png" class="add-to-follow"></image>
+      <view>关注</view>
+    </view>
+  </view>
+
+</view>
+<view class="user-box" wx:if="{{user_data.length <= 0 && loading_finished}}">
+  <notFound></notFound>
+</view>

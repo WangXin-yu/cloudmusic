@@ -1,0 +1,48 @@
+<view class="Gauss-bg" style="background: url({{$.current_song_cover}}) ">
+</view>
+<!-- <view class="Black-mask">
+</view> -->
+<view class="diy-top-singer-box">
+  <view class="go-back" bindtap="goBack"><image src="../../../../images/songList/playSong/go-back-icon.png" class="go-back-icon"></image></view>
+  <view class="song-name-and-singers">
+    <view class="song-name">{{$.songs_info[0].name}}</view>
+    <view class="singers">{{$.songs_info[0].ar[0].name}}</view>
+  </view>
+</view>
+<view class="black-disc-box">
+  <image src="{{$.current_song_cover}}" class="black-disc"></image>
+</view>
+<view class="icon-box">
+  <view class="icon-box-flex">
+    <view class="collect-download-effert-comment-more">
+      <view class="collect-download-effert-comment-more-box">
+        <image wx:if="{{!collect}}" src="../../../../images/songList/playSong/collect-icon.png" class="collect-icon" bindtap="isCollected"></image>
+        <image wx:else src="../../../../images/songList/playSong/collected-icon.png" class="collect-icon" bindtap="isCollected"></image>
+        <image src="../../../../images/songList/playSong/download-icon.png" class="collect-icon"></image>
+        <image src="../../../../images/songList/playSong/sound-effects-icon.png" class="sound-effects-icon"></image>
+        <image src="../../../../images/songList/playSong/comment-icon.png" class="comment-icon"></image>
+        <image src="../../../../images/songList/playSong/more-icon.png" class="collect-icon"></image>
+      </view>
+    </view>
+    <view class="song-slider-box">
+      <view class="current-time"><view class="zero" wx:if="{{$.current_playback_progress_minutes<10}}">0</view>{{$.current_playback_progress_minutes}}:<view class="zero" wx:if="{{$.current_playback_progress_seconds < 10}}">0</view>{{$.current_playback_progress_seconds}}</view>
+      <view>
+        <slider class="song-slider" value="{{$.current_playback_progress}}" max="{{$.current_song_duration}}" color="#ccc" activeColor="#fff" block-size="6" step="1" bindchange="dragSlider"/>
+      </view>
+      <view class="duration"><view class="zero" wx:if="{{$.current_song_duration_minutes < 10}}">0</view>{{$.current_song_duration_minutes}}:<view class="zero" wx:if="{{$.current_song_duration_seconds < 10}}">0</view>{{$.current_song_duration_seconds}}</view>
+    </view>
+
+    <view class="circle-toggle-start-menu">
+      <view class="circle-toggle-start-menu-box">
+        <image src="../../../../images/songList/playSong/circle-icon.png" class="collect-icon" wx:if="{{$.playback_mode==0}}" bindtap="playBackMode" data-mode="1"></image>
+        <image src="../../../../images/songList/playSong/random-play-icon.png" class="collect-icon" wx:elif="{{$.playback_mode==1}}" bindtap="playBackMode" data-mode="2"></image>
+        <image src="../../../../images/songList/playSong/single-play-icon.png" class="collect-icon" wx:elif="{{$.playback_mode==2}}" bindtap="playBackMode" data-mode="0"></image>
+        <image src="../../../../images/songList/playSong/left-toggle-icon.png" class="collect-icon" bindtap="songSwitching" data-direction="-1"></image>
+        <image src="../../../../images/songList/playSong/pause-icon.png" class="pasuse-and-play-icon" bindtap="playOrPause" wx:if="{{$.play_or_pause == 0}}" data-play_or_pause="1"></image>
+        <image src="../../../../images/songList/playSong/play-icon.png" class="pasuse-and-play-icon" bindtap="playOrPause" wx:if="{{$.play_or_pause == 1}}"  data-play_or_pause="0"></image>
+        <image src="../../../../images/songList/playSong/right-toggle-icon.png" class="collect-icon" bindtap="songSwitching" data-direction="1"></image>
+        <image src="../../../../images/songList/playSong/menu-icon.png" class="collect-icon"></image>
+      </view>
+    </view>
+  </view>
+</view>

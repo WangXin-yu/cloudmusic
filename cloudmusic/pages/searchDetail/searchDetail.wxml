@@ -1,0 +1,52 @@
+<!-- 搜索框部分 -->
+<view class="popup-top-search-box">
+  <image src="../../images/homePageIcons/go-back.png" bindtap="goback" class="go-back"></image>
+  <input class="search-input" placeholder="NINEONE" value="{{input_value}}" bindinput="debounce" bindconfirm="goToSearchDetailByInput"></input>
+  <image src="../../images/homePageIcons/singer.png" class="singer-icon"></image>
+</view>
+<!-- 显示搜索建议面板 -->
+<view class="search-suggestion-panel" wx:if="{{show_search_suggestion}}">
+  <view class="search-suggestion-text">搜索"{{input_value}}"</view>
+  <view wx:for="{{search_suggestion_arr}}" bindtap="goToSearchDetail" data-key_words="{{item.name}}" wx:key="{{index.id}}" class="search-suggestion-item">
+    <image src="../../images/homePageIcons/search-input-icon.png" class="search-icon"></image>
+    {{item.name}}
+  </view>
+</view>
+<!-- tabBar部分 -->
+<scroll-view class="tabBar-box" scroll-x="true">
+  <view class="tabBar-item {{tab_bar_text =='综合' ? 'red':''}}" bindtap="tabBarToggle" data-text="综合">综合</view>
+  <view class="tabBar-item {{tab_bar_text =='单曲' ? 'red':''}}" bindtap="tabBarToggle" data-text="单曲">单曲</view>
+  <view class="tabBar-item {{tab_bar_text =='视频' ? 'red':''}}" bindtap="tabBarToggle" data-text="视频">视频</view>
+  <view class="tabBar-item {{tab_bar_text =='歌手' ? 'red':''}}" bindtap="tabBarToggle" data-text="歌手">歌手</view>
+  <view class="tabBar-item {{tab_bar_text =='专辑' ? 'red':''}}" bindtap="tabBarToggle" data-text="专辑">专辑</view>
+  <view class="tabBar-item {{tab_bar_text =='歌单' ? 'red':''}}" bindtap="tabBarToggle" data-text="歌单">歌单</view>
+  <view class="tabBar-item {{tab_bar_text =='主播电台' ? 'red':''}}" bindtap="tabBarToggle" data-text="主播电台">主播电台</view>
+  <view class="tabBar-item {{tab_bar_text =='用户' ? 'red':''}}" bindtap="tabBarToggle" data-text="用户">用户</view>
+
+
+</scroll-view>
+
+<view wx:if="{{tab_bar_text =='综合'}}">
+  <comprehensive key_words="{{key_words}}" bind:goToSingleSong="getSingleSong" bind:goToVedio="getVideo" bind:goToSongList="getSongList" bind:goToAlbum="getAlbum" bind:goToUser="getUser" bind:goToStation="getStation"></comprehensive>
+</view>
+<view wx:if="{{tab_bar_text =='单曲'}}">
+  <singleSong key_words="{{key_words}}"></singleSong>
+</view>
+<view wx:if="{{tab_bar_text =='视频'}}">
+  <vedios key_words="{{key_words}}"></vedios>
+</view>
+<view wx:if="{{tab_bar_text =='歌手'}}">
+  <singer key_words="{{key_words}}"></singer>
+</view>
+<view wx:if="{{tab_bar_text =='专辑'}}">
+  <album key_words="{{key_words}}"></album>
+</view>
+<view wx:if="{{tab_bar_text =='歌单'}}">
+  <songList key_words="{{key_words}}"></songList>
+</view>
+<view wx:if="{{tab_bar_text =='主播电台'}}">
+  <radioStation key_words="{{key_words}}"></radioStation>
+</view>
+<view wx:if="{{tab_bar_text =='用户'}}">
+  <users key_words="{{key_words}}"></users>
+</view>

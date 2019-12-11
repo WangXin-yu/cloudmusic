@@ -1,0 +1,19 @@
+<scroll-view scroll-x="true" class="singer-type-navigation">
+  <view wx:for="{{singer_type}}" wx:key="{{index.id}}" class="singer-type-item" bindtap="toggleTopTabBar" data-index="{{index}}"  data-cat="{{singer_type[index].cat}}">
+    <view class="{{selected_index === index ? 'selected' : ''}}">{{item.type}}</view>
+  </view>
+</scroll-view>
+
+<view wx:for="{{singer_type.length}}" wx:key="{{index.id}} "wx:if="{{selected_index === index}}"
+>
+    <!-- 除了入驻歌手显示ABCD筛选栏 -->
+    <scroll-view wx:if="{{index > 0}}" class="alph-type-box" scroll-x="true">
+      <view wx:for="{{alph_type}}" wx:key="{{index.id}}" class="alph-type-item" bindtap="toggleAlpha" data-index="{{item}}">
+        <view class="{{alpha_selected_index == item ? 'alpha_selected' : ''}}">{{item}}</view>
+      </view>
+    </scroll-view>  
+    <view wx:for="{{artists}}" wx:key="{{index.id}}" class="singer-item" bindtap="goToSingeDetail" data-id="{{item.id}}">
+      <view class="singer-cover"><image src="{{item.picUrl == '' ?  '../../images/homePageIcons/music-icon.png' : item.picUrl}}" class="singer-cover"></image></view>
+      <view class="singer-name">{{item.name}}</view>    
+    </view> 
+</view>

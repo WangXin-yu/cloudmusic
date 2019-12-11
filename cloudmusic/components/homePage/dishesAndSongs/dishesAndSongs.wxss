@@ -1,0 +1,80 @@
+.describe{
+  width: 230rpx;
+  height: 70rpx;
+  font-size:26rpx;
+  margin-top:10rpx;
+  margin-bottom:30rpx;
+
+  text-overflow:ellipsis;
+  overflow: hidden;
+  display: -webkit-box; /* 弹性盒模型*/
+  -webkit-box-orient: vertical; /* 文字垂直排列 */
+  -webkit-line-clamp:2; /*文字显示的行数*/
+}
+
+.new-songs-top-box{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding:20rpx;
+
+}
+.new-songs-box-left{
+  display: flex;
+}
+
+.line{
+  color:#eee;
+  width: 1rpx;
+  padding: 0 20rpx;
+}
+.new-song, .new-dish{
+  color:#999;
+  font-size:30rpx;
+  line-height:60rpx;
+}
+.toggle-style{
+  font-weight: bold;
+  font-size:36rpx;
+  color: #000;
+}
+.more-dish{
+  border: 1rpx solid #eee;
+  padding: 10rpx 20rpx; 
+  font-size: 28rpx;
+  border-radius: 30rpx; 
+  color: #3a3a3a;
+}
+.new-songs-content-box{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20rpx;
+  flex-wrap: wrap;
+}
+.new-songs-image{
+  width:230rpx;
+  height: 230rpx;
+  border-radius: 10rpx;
+}
+.new-songs-image-box{
+  position:relative;
+}
+.play-btn{
+  position: absolute;
+  right: 20rpx;
+  bottom: 100rpx;
+  width:50rpx;
+  height:50rpx;
+  background: #fff;
+  border-radius: 50%;
+}
+.play-icon{
+  width:25rpx;
+  height:25rpx;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: auto;
+}

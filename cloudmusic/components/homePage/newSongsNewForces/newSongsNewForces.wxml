@@ -1,0 +1,14 @@
+<view class="new-songs-top-box">
+  <view class="new-forces">音乐新势力</view>
+  <view class="new-songs">
+    新音乐
+  </view>
+</view>
+<view class="new-songs-content-box">
+  <view wx:for="{{newSongsNewForces}}" wx:key="{{index.id}}" class="new-songs-item" bindtap="goToPlaySong" data-privilege="{{item.song.privilege}}">
+    <view>
+      <image src="{{item.song.album.picUrl}}" lazy-load class="new-songs-image"></image>
+    </view>
+    <view class="describe">{{item.name}}</view>
+  </view>
+</view>

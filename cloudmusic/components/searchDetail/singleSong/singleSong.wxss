@@ -1,0 +1,125 @@
+.single-box {
+  padding: 30rpx;
+  color: #333;
+  font-family: "Microsoft YaHei";
+  font-size:28rpx;
+}
+.single-text {
+  font-size: 36rpx;
+  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  margin-top: 40rpx;
+}
+
+.top-single-song {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60rpx;
+}
+
+.play-all-box {
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  border: 1rpx solid #ccc;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+}
+
+.play-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.single-song-item {
+  margin: 50rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: cneter;
+}
+.singers-and-album-container{
+  display: flex;
+}
+.singer_item {
+  display: flex;
+  max-width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.singer_item-al-name{
+   max-width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.singers-and-album-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 10rpx;
+}
+.mv-icon, .more-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.mv-icon {
+  margin-right: 40rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+.song-sheet-list-box{
+  position: absolute;
+  background: #fff;
+  top: 48vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+  padding: 30rpx;
+  color:#333;
+}
+.top-play-and-collection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+}
+.left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-icon{
+  width:40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+}
+.play-all-text{
+  display: flex;
+  align-items: center;
+}
+.list-count{
+  color:#999;
+  font-size:28rpx;
+}
+.manager{
+  display: flex;
+  align-items: center;
+
+  font-size:28rpx;
+}
+.manager-icon{
+  width:30rpx;
+  height:30rpx;
+  margin-right:10rpx;
+}

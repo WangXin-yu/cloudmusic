@@ -1,0 +1,116 @@
+
+<view wx:if="{{loading_finished}}">
+  <view class="diy-top-title-box">
+    <view class="diy-top-title">
+      <view class="go-back" bindtap="goBack">
+        <image src="../../images/songList/playSong/go-back-icon.png" class="go-back-icon"></image>
+      </view>
+      <view class="title">
+        <view>专辑</view>
+        <view class="editor-recommendation">编辑推荐: 千言万语每一句, 都是喜欢你</view>
+      </view>
+    </view>
+  </view>
+  <!-- 顶部封面的部分 -->
+  <view style="background-image: url({{album.picUrl}})" class="Gauss-bg">
+
+  </view>
+  <view class="top-background-box">
+    <view class="cover-and-info">
+      <view class="cover-box">
+        <image src="{{album.picUrl}}" aspectFill class="cover"></image>
+      </view>
+      <view class="right-detail">
+        <view class="name">
+          {{album.name}}
+        </view>
+        <view class="icon-and-cloud">
+          <view class="cloud-name">歌手:{{album.artist.name}}</view>
+          <!-- <view>
+          <image src="../../images/songList/arrow.png" class="arrow"></image>
+        </view> -->
+        </view>
+        <view class="description">
+          <view class="desc">
+            {{album.description}}
+          </view>
+          <!-- <image src="../../images/songList/arrow.png" class="arrow2"></image> -->
+        </view>
+      </view>
+    </view>
+    <!-- 分享评论下载部分 -->
+    <view class="comment-and-share-box">
+      <view>
+        <view>
+          <image class="comment-and-share-icon" src="../../images/songList/message-icon.png"></image>
+        </view>
+        <view>{{album.info.commentCount}}</view>
+      </view>
+      <view>
+        <view>
+          <image class="comment-and-share-icon" src="../../images/songList/share-icon.png"></image>
+        </view>
+        <view>{{album.info.shareCount}}</view>
+      </view>
+      <view>
+        <view>
+          <image class="comment-and-share-icon" src="../../images/songList/download-icon.png"></image>
+        </view>
+        <view>下载</view>
+      </view>
+      <view>
+        <view>
+          <image class="comment-and-share-icon" src="../../images/songList/multiple-icon.png"></image>
+        </view>
+        <view>多选</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 歌曲的展示部分 -->
+  <view class="song-sheet-list-box">
+    <!-- 顶部的播放全部和收藏 -->
+    <view class="top-play-and-collection">
+      <view class="left">
+        <image src="../../images/songList/play-icon.png" class="play-icon"></image>
+        <view class="play-all-text">
+          <view>
+            播放全部
+          </view>
+          <view class="list-count">(共20首)</view>
+        </view>
+      </view>
+      <view class="collection">
+        <image class="plus-icon" src="../../images/songList/plus-icon.png"></image>
+        <view>收藏</view>
+        <view>({{album.info.likedCount}})</view>
+      </view>
+    </view>
+    <!-- 歌曲列表展示 -->
+    <view class="sheet-list-box">
+      <view wx:for="{{songs}}" wx:key="{{index.id}}" class="sheet-list-item" bindtap="getPlayBarIndex" data-index="{{index}}">
+        <view class="sheet-list-item-left">
+          <view class="number">{{index+1}}</view>
+          <view class="song-name-box">
+            <view class="song-name">
+              {{item.name}}
+            </view>
+            <view class="author-box">
+              <view class="solo-icon">独家</view>
+              <view class="sq-icon">SQ</view>
+              <view class="singer-name">{{item.ar[0].name}}-</view>
+              <view class="album-name">{{item.al.name}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="mv-and-more-icon">
+          <image class="mv-icon" src="../../images/songList/mv-icon.png"></image>
+          <image class="more-icon" src="../../images/songList/more-icon.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{$.currentSongIndex != -1}}">
+  <playBar playBarIndex="{{playBarIndex}}"></playBar>
+</view>

@@ -1,0 +1,27 @@
+<!-- 歌曲列表 -->
+<view class="song-list-box">
+  <view wx:if="{{hot_songs.length}}">
+    <view wx:for="{{hot_songs}}" wx:key="index.id" bindtap="goToPlaySong" data-privilege="{{item.privilege}}">
+      <view class="song-list-item" wx:if="{{ !limit || index < limit}}">
+        <view class="left">
+          <view class="song-index">{{index+1}}</view>
+          <view>
+            <view class="song-name">{{item.name}}</view>
+            <view class="singer-name-and-album">
+              <view class="solo-icon">独家</view>
+              <view class="sq-icon">SQ</view>
+              <view>{{singer_info.name}}-</view>
+              <view class="album-name">{{item.al.name}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="mv-and-more-icon">
+          <image class="mv-icon" src="../../../images/songList/mv-icon.png"></image>
+          <image class="more-icon" src="../../../images/songList/more-icon.png"></image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>

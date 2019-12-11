@@ -1,0 +1,44 @@
+.radio-box{
+  padding: 0 30rpx;
+  font-size:28rpx;
+}
+.topic-text {
+  font-size: 28rpx;
+  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+.songlist-item-cover {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+}
+
+.songlist-item {
+  display: flex;
+  margin: 20rpx 0;
+}
+
+.songlist-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rpx;
+}
+
+.songlist-item-other-info {
+  display: flex;
+  font-size: 22rpx;
+  color: #808080;
+  width: 400rpx;
+}
+
+.songlist-item-right-songlist-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 480rpx;
+  margin-bottom: 10rpx;
+  font-size:28rpx;
+}

@@ -1,0 +1,67 @@
+
+.song-list-box{
+  padding:0 40rpx;
+  color:#333333;
+}
+.song-list-item{
+  padding-bottom: 40rpx;
+  display: flex;
+  justify-content: space-between
+}
+.song-index{
+  margin-right: 40rpx;
+  margin-left:10rpx;
+  color:#999;
+  text-align: right;
+  width:20rpx;
+}
+.song-list-box .left{
+  display: flex;
+  align-items: center;
+}
+.singer-name-and-album{
+  display: flex;
+  align-items: center;
+  font-size:24rpx;
+  color:#999;
+}
+.album-name{
+  width:200rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.song-name{
+  padding: 10rpx 0;
+}
+.solo-icon{
+  font-size:14rpx;
+  border: 1px solid #ff3a3a;
+  color:#ff3a3a;
+  margin-right:6rpx;
+  font-weight: bold;
+  height:20rpx;
+}
+.sq-icon{
+  font-size:14rpx;
+   height:20rpx;
+  border: 1px solid #fe6931;
+  color:#fe6931;
+   padding: 0 5rpx; 
+   font-weight: bold;
+   margin-right: 6rpx;
+}
+.mv-and-more-icon{
+  display: flex;
+  align-items: center;
+}
+
+.mv-icon,.more-icon{
+  width:40rpx;
+  height:40rpx;
+}
+.mv-icon{
+  margin-right:40rpx;
+  height:50rpx;
+  width:50rpx;
+}

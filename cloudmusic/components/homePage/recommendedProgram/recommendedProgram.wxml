@@ -1,0 +1,14 @@
+<view class="recommand-program-top-box">
+  <view class="recommand-program-title">推荐节目</view>
+  <view class="radio-square">
+    更多节目
+  </view>
+</view>
+<view class="recommand-program-box">
+  <view wx:for="{{programs}}" wx:key="{{index.id}}" bindtap="goToRadioStationDetail" data-id="{{item.id}}">
+    <view>
+      <image src="{{item.coverUrl}}" lazy-load class="recommand-program-image"></image>
+    </view>
+    <view class="describe">{{item.name}}</view>
+  </view>
+</view>

@@ -1,0 +1,334 @@
+.diy-top-title-box{
+  width: 100%;
+  position: fixed;
+  margin-top: 30rpx;
+  margin-left: 20rpx; 
+  top:20rpx;
+  z-index: 22;
+}
+.diy-top-title{
+  display: flex;
+  align-items: center;
+}
+.editor-recommendation{
+  font-size:22rpx;
+  color: #fff;
+}
+.go-back{
+  width: 10vw;
+  margin-left:20rpx;
+}
+.title{
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size:34rpx;
+  width: 500rpx;
+}
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-1000rpx, 0);
+  }
+
+}
+.recommand-title{
+  font-size:22rpx;
+  color:#ccc;
+  text-align: left;
+}
+.go-back-icon{
+  width:60rpx;
+  height:60rpx;
+}
+.Gauss-bg{
+  filter:blur(100rpx);
+  z-index: -1000;
+  width: 100%;
+  height:45vh;
+  position:absolute;
+  top : 0;
+}
+.top-background-box{
+  width: 100%;
+  height: 45vh;
+  margin-top: 140rpx;
+  /* background: #9e444d; */
+  padding: 30rpx; 
+  box-sizing: border-box;
+}
+.cover-and-info{
+  display: flex;
+  
+}
+.cover{
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 10rpx;
+  margin-right: 40rpx;
+}
+.right-detail{
+  padding-right:40rpx;
+  height: 280rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.name{
+  color:#fff;
+  font-weight: bold;
+  line-height: 50rpx;
+  font-size:36rpx;
+      white-space: nowrap;
+  width: 100%;
+}
+.icon-and-cloud{
+  display: flex;
+}
+.cloud-icon-bg{
+  width: 60rpx;
+  height:60rpx;
+  background: #ee0010;
+  border-radius: 50%;
+  position: relative;
+}
+.cloud-icon{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.v-icon-bg{
+  position: absolute;
+  width: 25rpx;
+  height: 25rpx;
+  border-radius: 50%;
+  background: #ed4036;
+  right: -10rpx;
+  bottom: 0;
+}
+.v-icon-icon{
+  width: 16rpx;
+  height: 16rpx;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cloud-name{
+  font-size:28rpx;
+  /* color: #eddcde; */
+  color:#fff;
+}
+.arrow{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top:10rpx;
+}
+.description{
+  font-size:22rpx;
+  line-height:36rpx;
+  /* color: #c58e93; */
+   color:#fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+  position:relative;
+  box-sizing: border-box;
+}
+.desc{
+  /* color: #e2c7ca; */
+  color:#fff;
+  height:76rpx;
+    text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.arrow2{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top:10rpx;
+  margin-left:20rpx;
+  position: absolute;
+  bottom: 0;
+  right: -10rpx;
+  z-index:1;
+}
+/* 讨论分享下载部分的CSS */
+.comment-and-share-box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60rpx;
+  margin-right:40rpx;
+  /* color: #e2c7ca; */
+   color:#fff;
+  padding: 0 40rpx;
+  font-size:26rpx;
+  text-align: center;
+}
+.comment-and-share-icon{
+  width:50rpx;
+  height:50rpx;
+}
+.cover-box{
+  position:relative;
+}
+.play-count{
+  position: absolute;
+  top: 5rpx;
+  right: 20%;
+  color:#fff;
+  font-size:24rpx;
+  display: flex;
+}
+.play-count-icon{
+  width:25rpx;
+  height:25rpx;
+}
+/*  */
+.song-sheet-list-box{
+  position: absolute;
+  background: #fff;
+  top: 48vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+  padding: 30rpx;
+  color:#333;
+}
+.top-play-and-collection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-icon{
+  width:40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+}
+.play-all-text{
+  display: flex;
+  align-items: center;
+}
+.list-count{
+  color:#999;
+  font-size:28rpx;
+}
+.collection{
+  height:80rpx;
+  width: 240rpx;
+  background: #ff3a3a;
+  color:#fff;
+  border-radius: 60rpx;
+  font-size:26rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plus-icon{
+  margin-right:10rpx;
+  width:26rpx;
+  height:26rpx;
+}
+.sheet-list-box{
+
+}
+
+.sheet-list-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:40rpx;
+}
+.sheet-list-item-left{
+  display: flex;
+  align-items: center;
+}
+.song-name-box{
+  margin-left:30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 400rpx;
+  text-overflow: ellipsis;
+}
+.song-name{
+    overflow: hidden;
+  text-overflow: ellipsis;
+}
+.solo-icon{
+  font-size:14rpx;
+  border: 1px solid #ff3a3a;
+  color:#ff3a3a;
+  margin-right:6rpx;
+  font-weight: bold;
+}
+.sq-icon{
+  font-size:14rpx;
+  border: 1px solid #fe6931;
+  color:#fe6931;
+   padding: 0 5rpx; 
+   font-weight: bold;
+   margin-right: 6rpx;
+}
+.author-box{
+  display: flex;
+  align-items: center;
+  margin-top:10rpx;
+  color:#8a8a8a;
+}
+.number{
+  margin-right:20rpx;
+  margin-left:10rpx;
+  color:#999;
+  text-align: right;
+  width:10rpx;
+}
+.singer-name,.album-name{
+  font-size:24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color:#999;
+}
+.album-name{
+  overflow: hidden;
+  max-width:320rpx;
+  height: 30rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.singer-name{
+}
+.mv-and-more-icon{
+  display: flex;
+  align-items: center;
+}
+
+.mv-icon,.more-icon{
+  width:40rpx;
+  height:40rpx;
+}
+.mv-icon{
+  margin-right:40rpx;
+  height:50rpx;
+  width:50rpx;
+}

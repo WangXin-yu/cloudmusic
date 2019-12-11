@@ -1,0 +1,41 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-active-color="red" class="swiper-box">
+  <block wx:for="{{banner_data}}" wx:key="{{index.id}}">
+    <swiper-item class="swiper-item">
+      <image src="{{item.pic}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 每日推荐 歌单 排行榜  电台 直播 -->
+<view class="top-nav">
+  <view class="nav-item">
+    <view class="nav-image-box">
+      <image src="../../../images/homePageIcons/nav/recommand-icon.png" class="nav-image"></image>
+    </view>
+    <view class="nav-item-title">每日推荐</view>
+  </view>
+  <view class="nav-item">
+    <view class="nav-image-box">
+      <image src="../../../images/homePageIcons/nav/music-icon.png" class="nav-image"></image>
+    </view>
+    <view class="nav-item-title">歌单</view>
+  </view>
+  <view class="nav-item">
+    <view class="nav-image-box">
+      <image src="../../../images/homePageIcons/nav/rank-icon.png" class="nav-image"></image>
+    </view>
+    <view class="nav-item-title">排行榜</view>
+  </view>
+  <view class="nav-item">
+    <view class="nav-image-box">
+      <image src="../../../images/homePageIcons/nav/radio-station-icon.png" class="nav-image"></image>
+    </view>
+    <view class="nav-item-title">电台</view>
+  </view>
+  <view class="nav-item">
+    <view class="nav-image-box">
+      <image src="../../../images/homePageIcons/nav/live-broadcast-icon.png" class="nav-image"></image>
+    </view>
+    <view class="nav-item-title">直播</view>
+  </view>
+</view>

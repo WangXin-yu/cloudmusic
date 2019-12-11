@@ -1,0 +1,53 @@
+<view class="nickname-box">
+  <view>昵称</view>
+  <view class="right">
+    <van-field value="{{ nickname }}" border="{{ false }}" bind:change="nicknameOnChange" class="nickname-input" fixed maxlength="6" input-align="right" placeholder="" />
+    <image src="../../images/my/my-edit/arrow-right-icon.png" class="arrow-right"></image>
+  </view>
+</view>
+
+<view class="sex-box">
+  <view>性别</view>
+  <view class="right">
+    <van-popup show="{{ show_sex }}" position="bottom" custom-style="height: 20%;" bind:close="onCloseSexPopUp" bind:click-overlay="onCloseSexPopUp" closeable close-icon="close">
+      <view class="sex-popup-box">
+        <view class="sex-item" hover-class="hover-style" bindtap="onSelectSex" data-sex="男">男</view>
+        <view class="sex-item" hover-class="hover-style" bindtap="onSelectSex" data-sex="女">女</view>
+        <view class="sex-item" hover-class="hover-style" bindtap="onSelectSex" data-sex="保密">保密</view>
+      </view>
+    </van-popup>
+    <view bindtap="popUpSex" class="sex-text">{{sex}}</view>
+    <image src="../../images/my/my-edit/arrow-right-icon.png" class="arrow-right"></image>
+  </view>
+</view>
+
+<view class="birthday-box">
+  <view>生日</view>
+  <view class="right">
+    <van-popup show="{{ show_birthday }}" position="bottom">
+      <van-datetime-picker type="date" value="{{ currentDate }}" max-date="{{ maxDate }}" min-date="{{ minDate }}" formatter="{{ formatter }}" bind:confirm="birthdayConfirm" bind:cancel="birthdayCancle" />
+    </van-popup>
+    <view class="birthday-text" bindtap="showBirthDayPopUp">{{birthday}}</view>
+    <image src="../../images/my/my-edit/arrow-right-icon.png" class="arrow-right"></image>
+  </view>
+</view>
+
+<view class="birthday-box">
+  <view>城市</view>
+  <view class="right">
+    <van-popup show="{{ show_city }}" position="bottom">
+      <van-area area-list="{{ city_arr }}" columns-num="{{ 2 }}" value="110101" bind:confirm="cityConfirm" bind:cancel="cityCancle" />
+    </van-popup>
+    <view class="city-text" bindtap="showCityPopUp">{{city}}</view>
+    <image src="../../images/my/my-edit/arrow-right-icon.png" class="arrow-right"></image>
+  </view>
+</view>
+
+<view class="autograph-box">
+  <view class="autograph-text">签名</view>
+  <textarea value="{{autograph}}"  rows="400" cols="400" class="autograph-textarea" bind:input="autographInput" maxlength="30" >
+  </textarea>
+</view>
+<view class="modify" bindtap="confirmModify">
+  确认修改
+</view>

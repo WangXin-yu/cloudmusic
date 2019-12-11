@@ -1,0 +1,54 @@
+<view class="singer-cover-box">
+  <image src="../../../images/songList/playSong/go-back-icon.png" class="go-back-icon" bindtap="goBack"></image>
+  <image src="{{singer_info.img1v1Url}}" class="singer-cover" mode="aspectFill"></image>
+  <view class="singer-name-and-fans">
+    <view class="singer-name">{{singer_info.name}}</view>
+    <view class="fans">粉丝16.5万</view>
+  </view>
+  <view class="follow-btn">
+    <image src="../../../images/singerDetailIcons/add-to-follow.png" class="add-to-follow"></image>
+    <view>关注</view>
+  </view>
+</view>
+<view class="song-list">
+  <view class="tab-bar">
+    <view class="{{tabBar_index == '主页' ? 'selected': ''}}" bindtap="toggleTabBar" data-index="主页">主页</view>
+    <view class="{{tabBar_index == '歌曲' ? 'selected': ''}}" bindtap="toggleTabBar" data-index="歌曲">歌曲</view>
+    <view class="{{tabBar_index == '专辑' ? 'selected': ''}}" bindtap="toggleTabBar" data-index="专辑">专辑</view>
+    <view class="{{tabBar_index == '视频' ? 'selected': ''}}" bindtap="toggleTabBar" data-index="视频">视频</view>
+  </view>
+  <!-- 主页 -->
+  <view wx:if="{{tabBar_index == '主页'}}">
+    <view class="add-and-manager">
+      <view class="add">
+        <image src="../../../images/songList/play-icon.png" class="add-to-collect"></image>
+        <view class="collect-hot">播放热门50</view>
+      </view>
+    </view>
+    <view wx:if="{{hot_songs.length > 0}}">
+      <homePage singer_id="{{singer_id}}" singer_info="{{singer_info}}" bind:goToSongs="getSongs"></homePage>
+    </view>
+  </view>
+  <!-- 歌曲 -->
+  <view wx:if="{{tabBar_index == '歌曲' && loading_finished}}">
+    <view class="add-and-manager">
+      <view class="add">
+        <image src="../../../images/singerDetailIcons/add-to-collect.png" class="add-to-collect"></image>
+        <view class="collect-hot">收藏热门50</view>
+      </view>
+      <view class="manager">
+        <image src="../../../images/singerDetailIcons/manager.png" class="manager-icon"></image>
+        <view>管理</view>
+      </view>
+    </view>
+    <songs singer_id="{{singer_id}}"></songs>
+  </view>
+  <!-- 专辑 -->
+  <view wx:if="{{tabBar_index == '专辑'}}">
+    <albums singer_id="{{singer_id}}"></albums>
+  </view>
+  <!-- 视频 -->
+  <view wx:if="{{tabBar_index == '视频'}}">
+    <vedios singer_id="{{singer_id}}"></vedios>
+  </view>
+</view>

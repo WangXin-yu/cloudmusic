@@ -1,0 +1,147 @@
+.Gauss-bg {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  filter: blur(100rpx);
+}
+.Black-mask{
+   position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, .3);
+}
+.diy-top-singer-box{
+  margin-top: 40rpx;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  z-index: 22;
+}
+.go-back{
+  width: 10vw;
+  margin-left:20rpx;
+}
+.go-back-icon{
+  width:60rpx;
+  height:60rpx;
+}
+.song-name-and-singers{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.song-name{
+  color: #fff;
+  font-size:36rpx;
+  line-height: 45rpx;
+}
+.singers{
+  color: #eee;
+  font-size:26rpx;
+}
+.black-disc {
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 100%;
+  box-shadow: 0 0 10rpx #666;
+  position: absolute;
+  top:20vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: rotate 22s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+.icon-box{
+  z-index: 100;
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  height: 25vh;
+
+}
+.icon-box-flex{
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+.collect-icon ,.comment-icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.pasuse-and-play-icon {
+  width: 120rpx;
+  height: 120rpx;
+}
+.sound-effects-icon {
+  width: 60rpx;
+  height:60rpx;
+}
+
+.collect-download-effert-comment-more-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 40rpx; */
+}
+
+.circle-toggle-start-menu-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.progress-box{
+  width: 80%;
+  margin: 0 auto;
+}
+.progress{
+  width: 800rpx;
+}
+.custom{
+  width: 10rpx;
+  height:10rpx;
+  background: red;
+}
+.song-slider-box{
+  position: relative;
+}
+.current-time{
+  position:absolute;
+  left: -20rpx;
+  top: 0;
+  font-size: 24rpx;
+  /* color: #babab8; */
+  color:#fff;
+}
+.duration{
+  position:absolute;
+  right: -20rpx;
+  top: 0;
+  font-size: 24rpx;
+  /* color: #6f6a64 */
+  color:#ccc;
+}
+.song-slider{
+  width: 80%;
+  margin: 0 auto;
+}
+.zero{
+  display: inline-block;
+}

@@ -1,0 +1,24 @@
+.essential-information-box{
+  padding: 50rpx 30rpx;
+}
+.go-back-icon{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+}
+.go-back-and-title{
+  display: flex;
+  align-items: center;
+  font-size: 36rpx;
+}
+.brief-introduction{
+  margin-top: 80rpx;
+}
+.title{
+  font-size: 36rpx;
+  margin: 30rpx 0;
+}
+.content{
+  font-size:28rpx;
+  color: #808080;
+}

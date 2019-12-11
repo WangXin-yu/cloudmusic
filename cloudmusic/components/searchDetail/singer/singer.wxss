@@ -1,0 +1,40 @@
+.singer-box, .album-box {
+  display: flex;
+  margin-top: 20rpx;
+  padding: 0 30rpx;
+  color: #808080;
+  font-size:28rpx;
+}
+
+.singer-cover, .album-cover {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  /* font-size: 32rpx; */
+}
+
+.singer-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.singer-name-box {
+  display: flex;
+  /* font-size: 32rpx; */
+}
+
+.chinese-name {
+  color: #507daf;
+}
+
+.fans-album-box {
+  display: flex;
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 10rpx;
+}
+.not-found{
+  text-align: center;
+}

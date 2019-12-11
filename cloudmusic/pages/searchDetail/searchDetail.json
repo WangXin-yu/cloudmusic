@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "comprehensive": "../../components/searchDetail/comprehensive/comprehensive",
+    "album": "../../components/searchDetail/album/album",
+    "radioStation":"../../components/searchDetail/radioStation/radioStation",
+    "singer":"../../components/searchDetail/singer/singer",
+    "singleSong":"../../components/searchDetail/singleSong/singleSong",
+    "songList":"../../components/searchDetail/songList/songList",
+    "users":"../../components/searchDetail/users/users",
+    "vedios":"../../components/searchDetail/vedios/vedios"
+  }
+}

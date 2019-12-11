@@ -1,0 +1,18 @@
+<view class="recommand-top">
+  <view class="recommand-list-text">推荐歌单</view>
+  <view class="recommand-square">歌单广场</view>
+</view>
+<view class="recommand-content">
+  <view wx:for="{{recommand_list}}" wx:key="{{index.id}}" class="recommand-item" bindtap="goToRecommandList" data-id="{{item.id}}">
+    <view wx:if="{{index < 6}}">
+      <view class="recommand-image-box">
+        <image src="{{item.picUrl}}" class="recommand-image" lazy-load></image>
+        <view class="play-count">
+          <view><image class="play-count-icon"   lazy-load src="../../../images/homePageIcons/recommand/play-count-icon.png"></image> </view>
+          <view >{{item.playCount}}</view>
+        </view>
+      </view>
+      <view class="describe">{{item.copywriter}}</view>
+    </view>
+  </view>
+</view>

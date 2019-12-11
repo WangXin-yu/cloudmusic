@@ -1,0 +1,18 @@
+<view class="vedio-box" wx:if="{{vedio_data.length > 0 && loading_finished}}">
+  <view wx:for="{{vedio_data}}" wx:key="{{item.id}}" class="vedio-item">
+    <image class="vedio-item-cover" src="{{item.coverUrl}}"></image>
+    <view class="vedio-item-right-other-info">
+      <view class="vedio-item-right-other-info-title">
+        <view class="vedio-item-right-other-info-mv" wx:if="{{item.creator[0].userName==key_words}}">MV</view>
+        {{item.title}}
+      </view>
+      <view class="vedio-item-right-other-info-playTime-username">
+        <view>{{item.playTime}}</view>
+        <view>by{{item.creator[0].userName}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="vedio-box" wx:if="{{vedio_data.length <= 0 && loading_finished}}">
+  <notFound key_words="{{key_words}}"></notFound>
+</view>

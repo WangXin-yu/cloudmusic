@@ -1,0 +1,27 @@
+<view class="tabBarBox">
+  <view class="phone-bar {{toggle_index == 0 ? 'selected' : ''}}" bindtap="toggleRegister" data-index="0">手机登录</view>
+  <view class="email-bar {{toggle_index == 1 ? 'selected' : ''}}" bindtap="toggleRegister" data-index="1">邮箱登录</view>
+</view>
+<view class="input-box">
+  <view wx:if="{{toggle_index == 0}}">
+    <!-- 手机号登录的界面 -->
+    <van-cell-group>
+      <van-field value="{{ phone_username }}" bind:input="getPhoneUserName" left-icon="phone-o" required label="手机" placeholder="请输入手机号"></van-field>
+
+      <van-field value="{{ phone_password }}" bind:input="getPhonePassword" left-icon="envelop-o" type="password" label="密码" placeholder="请输入密码" required  />
+    </van-cell-group>
+  </view>
+  <view wx:else>
+    <!-- 邮箱登录的界面 -->
+        <van-cell-group>
+      <van-field value="{{ email_username }}" bind:input="getEmailUserName"  left-icon="envelop-o" required label="邮箱" placeholder="请输入网易邮箱"></van-field>
+
+      <van-field value="{{ email_password }}" bind:input="getEmailPassword"   left-icon="label-o" type="password" label="密码" placeholder="请输入密码" required  />
+    </van-cell-group>
+  </view>
+</view>
+
+<view class="login-register-btn">
+  <view class="login-btn" bindtap="loginImmediately">立即登录</view>
+  <view class="register-btn" bindtap="goToRegister">立即注册</view>
+</view>

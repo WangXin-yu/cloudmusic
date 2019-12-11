@@ -1,0 +1,29 @@
+<view class="new-songs-top-box">
+  <view class="new-songs-box-left">
+    <view class="new-dish {{toggle == 0 ?'toggle-style':''}}" bindtap="toggleEvent" data-index="0">新碟</view>
+    <view class="line">|</view>
+    <view class="new-song {{toggle == 1 ?'toggle-style':''}}" bindtap="toggleEvent" data-index="1">新歌</view>
+  </view>
+  <view class="more-dish">
+    更多新碟
+  </view>
+</view>
+<view class="new-songs-content-box" wx:if="{{toggle==0}}">
+  <view wx:for="{{dish_list}}" wx:key="{{index.id}}" class="new-songs-item" bindtap="goDishesDetail" data-id="{{item.id}}">
+    <view>
+      <image src="{{item.picUrl}}" lazy-load class="new-songs-image"></image>
+    </view>
+    <view class="describe">{{item.name}}</view>
+  </view>
+</view>
+<view class="new-songs-content-box" wx:else>
+  <view wx:for="{{song_list}}" wx:key="{{index.id}}" class="new-songs-item" bindtap="goToPlaySong" data-privilege="{{item.privilege}}">
+    <view class="new-songs-image-box">
+      <image src="{{item.album.picUrl}}" lazy-load class="new-songs-image"></image>
+      <view class="play-btn">
+        <image class="play-icon" src="../../../images/homePageIcons/dishes/play-icon.png"></image>
+      </view>
+      <view class="describe">{{item.name}}</view>
+    </view>
+  </view>
+</view>

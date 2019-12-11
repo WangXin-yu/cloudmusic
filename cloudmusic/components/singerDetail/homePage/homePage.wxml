@@ -1,0 +1,30 @@
+<view>
+  <songs singer_id="{{singer_id}}" limit="5"></songs>
+  <view class="more" bindtap="goToSongs" wx:if="{{loading_finished}}">
+    <view>更多热歌</view>
+    <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow"></image>
+  </view>
+</view>
+<view class="line" wx:if="{{briefDesc.length > 0}}"></view>
+<!-- 基本信息的部分 -->
+<view class="essential-information" wx:if="{{loading_finished && briefDesc.length > 0}}">
+  <view class="topic-title">
+    基本信息
+  </view>
+  <view class="describe-content">
+    <view class="nickname">昵称: {{singer_info.name}}{{singer_info.alias[0]}}</view>
+    <view class="gender">性别: 女</view>
+    <view class="region">地区: 台湾省 台北市</view>
+    <view class="brief-intro">简介: {{singer_info.briefDesc}}</view>
+  </view>
+  <view class="more" bindtap="goToInformationDetail" wx:if="{{loading_finished}}">
+    <view>更多信息</view>
+    <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow"></image>
+  </view>
+  <view wx:if="{{introduction.length > 0 && show_popup}}">
+    <essentialInformation introduction="{{introduction}}" singer_info="{{singer_info}}"></essentialInformation>
+  </view>
+  
+</view>
+<view class="line" wx:if="{{briefDesc.length > 0}}"></view>
+<!-- 影响力的部分 -->

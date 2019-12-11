@@ -1,0 +1,17 @@
+<view class="songlist-box" wx:if="{{album_data.length > 0 && loading_finished}}">
+  <view class="songlist-item" wx:for="{{album_data}}" wx:key="{{item.id}}" bindtap="goToRecommandList" data-id="{{item.id}}">
+    <view class="album-pic-box">
+      <image src="{{item.picUrl}}" class="songlist-item-cover"></image>
+      <image class="album-bg" src="../../../images/searchDetailsIcons/comprehensive/album-bg.png"></image>
+    </view>
+    <view class="songlist-item-right">
+      <view class="songlist-item-right-songlist-name">{{item.name}}</view>
+      <view class="songlist-item-other-info albums-name-list">
+        {{item.artist.name}}
+      </view>
+    </view>
+  </view>
+</view>
+<view class="songlist-box" wx:if="{{album_data.length <= 0 && loading_finished}}">
+  <notFound key_words="{{key_words}}"></notFound>
+</view>

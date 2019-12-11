@@ -1,0 +1,27 @@
+.title{
+  font-weight: bold;
+}
+.vedios-box{
+  padding: 30rpx;
+}
+.mv-cover{
+  width: 320rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+.mv-item{
+  display: flex;
+  margin: 20rpx 0;
+}
+.publish-time-and-size{
+  width: 380rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.publish-time{
+  font-size:24rpx;
+  color:#808080;
+  margin-top: 14rpx;
+}

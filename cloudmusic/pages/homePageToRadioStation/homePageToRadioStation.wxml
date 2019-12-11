@@ -1,0 +1,117 @@
+<view class="diy-top-title-box">
+  <view class="diy-top-title">
+    <view class="go-back" bindtap="goback">
+      <image src="../../images/songList/playSong/go-back-icon.png" class="go-back-icon"></image>
+    </view>
+    <view class="title">
+      <view>电台</view>
+    </view>
+  </view>
+</view>
+
+<view style="background-image: url({{dj.picUrl}})" class="Gauss-bg">
+  <view class="name-and-likecount-box">
+    <view class="name-and-likecount-collect">
+      <view class="name-and-likecount">
+        <view class="radio-name">
+          {{dj.name}}
+        </view>
+        <view class="liked-count">
+          {{dj.subCount}}人已订阅
+        </view>
+      </view>
+      <view class="collect">
+        <image src="../../images/radioDetailIcons/star.png" class="star"></image>
+        <view>订阅</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="radio-tabBar-box">
+  <view class="radio-tabBar">
+    <view bindtap="toggleTabBar" data-index="0" class="{{tabBar_index == 0 ? 'selected' : ''}}">详情</view>
+    <view bindtap="toggleTabBar" data-index="1" class="{{tabBar_index == 1 ? 'selected' : ''}}">节目</view>
+  </view>
+  <!-- 展示详情 -->
+  <view wx:if="{{tabBar_index == 0}}" class="content-box">
+    <view class="dj-cover-and-name-box">
+      <view class="dj-text">主播</view>
+      <view class="cover-and-name-box">
+        <view class="cover-and-name">
+          <image src="{{dj.picUrl}}" class="dj-cover"></image>
+          <view class="dj-nickname-and-dj-desc">
+            <view class="dj-nickname">{{dj.dj.nickname}}</view>
+            <view class="dj-desc">{{dj.dj.description}}</view>
+          </view>
+        </view>
+
+        <image src="../../images/radioDetailIcons/arrow.png" class="star"></image>
+      </view>
+    </view>
+    <!-- 电视内容简介 -->
+    <view class="dj-desc-box">
+      <view class="dj-text">电视内容简介</view>
+      <view class="category-box">
+        <view>分类: </view>
+        <view class="category-bg">{{dj.category}}</view>
+      </view>
+      <view>{{dj.rcmdText}}</view>
+    </view>
+    <!-- 评论部分 -->
+    <view class="comment-box">
+      <view class="dj-text">精彩评论</view>
+      <view wx:if="{{dj.commentDatas}}">
+        <view wx:for="{{dj.commentDatas}}" wx:key="{{index.id}}" class="comment-item">
+          <image src="{{item.userProfile.avatarUrl}}" class="commenter-avatar"></image>
+          <view class="comment-content">
+            <view class="commenter-nickname">{{item.userProfile.nickname}}</view>
+            <view>{{item.content}}</view>
+            <view class="commenter-programName">—— {{item.programName}}</view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <!-- 展示节目 -->
+  <view wx:else class="content-box">
+    <view wx:if="{{programs.length > 0}}">
+      <view class="top-option">
+        <view class="program-count">共{{programs_count}}期</view>
+        <view class="sort-and-multiple-selection">
+          <view class="sort-box">
+            <image src="../../images/radioDetailIcons/down-arrow.png" class="down-arrow-icon"></image>
+            <view> 排序</view>
+          </view>
+          <view class="multiple-selection-box">
+            <image src="../../images/singerDetailIcons/sort.png" class="multiple-selection-icon"></image>
+            <view> 多选</view>
+          </view>
+        </view>
+      </view>
+      <view wx:for="{{programs}}" wx:key="{{index.id}}" class="programs-item">
+        <view class="programs-item-left">
+          <view class="serialNum">{{item.serialNum}}</view>
+          <view>
+            <view class="program-name">{{item.name}}</view>
+            <view class="other-info">
+              <view class="createTime">{{item.createTime}}</view>
+              <view class="program-playcount">
+                <image src="../../images/radioDetailIcons/play-count.png" class="play-count-icon"> </image>
+                <view>{{item.listenerCount}}</view>
+              </view>
+              <view class="program-timer">
+                <image src="../../images/radioDetailIcons/timer.png" class="timer-icon"> </image>
+                <view>{{item.duration}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view></view>
+      </view>
+    </view>
+
+  </view>
+</view>

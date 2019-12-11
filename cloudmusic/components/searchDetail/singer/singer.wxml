@@ -1,0 +1,12 @@
+  <view class="singer-box" wx:for="{{singer_data}}" wx:key="{{index.id}}" wx:if="{{singer_data.length > 0 && loading_finished}}" bindtap="goToSingeDetail" data-id="{{item.id}}">
+    <image src="{{item.img1v1Url}}" class="singer-cover"></image>
+    <view class="singer-detail">
+      <view class="singer-name-box">
+        <view class="chinese-name"> {{item.name}}</view>
+        <view  wx:if="{{item.alias.length > 0}}">({{item.alias}})</view>
+      </view>
+    </view>
+  </view>
+  <view  class="not-found" wx:if="{{singer_data.length <= 0 && loading_finished}}">
+    <notFound key_words="{{key_words}}"></notFound>
+  </view>

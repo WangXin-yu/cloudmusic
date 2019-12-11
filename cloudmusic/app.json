@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/homePage/homePage",
+    "pages/singer/singer",
+    "pages/singer/singerDetail/singerDetail",
+    "pages/my/my",
+    "pages/homePageToRecommendSongs/recommendSongs/recommendSongs",
+    "pages/homePageToRadioStation/homePageToRadioStation",
+    "pages/homePageToNewDishes/homePageToNewDishes",
+    "pages/loginAndRegister/loginAndRegister",
+    "pages/register/register",
+    "pages/myToEdit/myToEdit",
+    "pages/homePageToRecommendSongs/recommendSongs/PlaySong/PlaySong",
+    "pages/searchDetail/searchDetail"
+  ],
+    "requiredBackgroundModes": [
+      "audio"
+    ],
+  "tabBar":{
+    "selectedColor": "#000",
+    "color":"#999",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "首页",
+        "iconPath": "images/tabBarIcons/home-page-icon.png",
+        "selectedIconPath": "images/tabBarIcons/selected-home-page-icon.png"
+      },
+      {
+        "pagePath": "pages/singer/singer",
+        "text": "歌手",
+        "iconPath": "images/tabBarIcons/singer-icon.png",
+        "selectedIconPath": "images/tabBarIcons/selected-singer-icon.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/tabBarIcons/my-icon.png",
+        "selectedIconPath": "images/tabBarIcons/selected-my-icon.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9e444d",
+    "navigationBarTitleText": "网易云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

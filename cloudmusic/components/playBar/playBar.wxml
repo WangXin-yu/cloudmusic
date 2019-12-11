@@ -1,0 +1,15 @@
+
+<view class="playBar"  bindtap="goToPlaySong">
+  <view class="song-info">
+    <image src="{{$.current_song_cover}}" class="current_song_cover"></image>
+    <view class="song-and-singer-name">
+      <view class="song-name">{{$.songs_info[0].name}}</view>
+      <view class="singer-name">{{$.songs_info[0].ar[0].name}}</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <image wx:if="{{$.play_or_pause == 1}}" src="../../images/playBar/play.png" class="play-icon" catchtap="togglePlayOrPauseIcon" data-play_or_pause="0"></image>
+    <image  wx:if="{{$.play_or_pause == 0}}" src="../../images/playBar/pause.png" class="pause-icon" catchtap="togglePlayOrPauseIcon" data-play_or_pause="1"></image>
+    <image src="../../images/playBar/songlist.png" class="songlist-icon"></image>
+  </view>
+</view>

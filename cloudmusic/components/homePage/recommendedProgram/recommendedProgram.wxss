@@ -1,0 +1,40 @@
+.recommand-program-top-box{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding:20rpx;
+}
+.recommand-program-title{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.radio-square{
+  border: 1rpx solid #eee;
+  padding: 10rpx 20rpx; 
+  font-size: 28rpx;
+  border-radius: 30rpx; 
+  color: #3a3a3a;
+}
+
+.recommand-program-box{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20rpx;
+  flex-wrap: wrap;
+}
+.recommand-program-image{
+  width:230rpx;
+  height: 230rpx;
+  border-radius: 10rpx;
+}
+
+.describe{
+  width: 230rpx;
+  height: 70rpx;
+  font-size:26rpx;
+  margin-top:10rpx;
+  margin-bottom:30rpx;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

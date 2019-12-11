@@ -1,0 +1,127 @@
+{{$.motto}}
+<view wx:if="{{show_sheet_list}}">
+  <view class="diy-top-title-box">
+    <view class="diy-top-title">
+      <view class="go-back" bindtap="goBack">
+        <image src="../../../images/songList/playSong/go-back-icon.png" class="go-back-icon"></image>
+      </view>
+      <view>
+        <!-- <view class="title">歌单</view> -->
+        <view class="title">{{song_list.playlist.name}}</view>
+      </view>
+
+    </view>
+
+  </view>
+  <!-- 顶部封面的部分 -->
+  <view style="background-image: url({{song_list.playlist.coverImgUrl || album.picUrl}})" class="Gauss-bg">
+
+  </view>
+  <view class="top-background-box">
+    <view class="cover-and-info">
+      <view class="cover-box">
+        <image src="{{song_list.playlist.coverImgUrl || album.picUrl}}" aspectFill class="cover"></image>
+        <view class="play-count">
+          <view>
+            <image class="play-count-icon" lazy-load src="../../../images/homePageIcons/recommand/play-count-icon.png"></image>
+          </view>
+          <view>{{song_list.playlist.playCount}}</view>
+        </view>
+      </view>
+      <view class="right-detail">
+        <view class="name">
+          {{song_list.playlist.name}}
+        </view>
+        <view class="icon-and-cloud">
+          <view class="icon-box">
+            <view class="cloud-icon-bg" wx:if="{{!from_album}}">
+              <image src="{{song_list.playlist.creator.avatarUrl}}" class="cloud-icon"></image>
+              <view class="v-icon-bg">
+                <image src="../../../images/songList/V.png" class="v-icon-icon">
+                </image>
+              </view>
+            </view>
+            <view wx:else class="singer-text">歌手: </view>
+          </view>
+          <view class="cloud-name">{{song_list.playlist.creator.nickname || album.artist.name}}</view>
+          <view>
+            <image src="../../../images/songList/arrow.png" class="arrow"></image>
+          </view>
+        </view>
+        <view class="description">
+          <view class="desc"  wx:if="{{song_list.playlist.description}}">
+            <view wx:if="{{!song_list.playlist.description}}">介绍: 无</view>
+            <view wx:else>{{song_list.playlist.description}}</view>
+          </view>
+          <view class="desc"  wx:if="{{album.description}}">
+            <view wx:if="{{!album.description}}">介绍: 无</view>
+            <view wx:else>{{album.description}}</view>
+          </view>
+          <view class="desc"  wx:if="{{!album.description && !song_list.playlist.description}}">
+            <view>介绍: 无</view>
+          </view>
+          <image wx:if="{{song_list.playlist.description}}" src="../../../images/songList/arrow.png" class="arrow2"></image>
+        </view>
+      </view>
+    </view>
+    <!-- 分享评论下载部分 -->
+    <view class="comment-and-share-box">
+      <view>
+        <view>
+          <image class="comment-and-share-icon" src="../../../images/songList/message-icon.png"></image>
+        </view>
+        <!-- 如果是从歌单点击进来的要用歌单的数据 -->
+        <view wx:if="{{song_list.playlist.commentCount}}">
+          <view class="comment-and-share-title" wx:if="{{song_list.playlist.commentCount == 0}}">评论</view>
+          <view class="comment-and-share-title" wx:else>{{song_list.playlist.commentCount}}</view>
+        </view>
+        <!-- 如果是从专辑点击进来的要用专辑的数据 -->
+        <view wx:if="{{album.info.shareCount}}">
+          <view class="comment-and-share-title" wx:if="{{album.info.shareCount == 0}}">评论</view>
+          <view class="comment-and-share-title" wx:else>{{album.info.shareCount}}</view>
+        </view>
+        <!-- 如果专辑或者歌单都没有则显示评论 -->
+        <view wx:if="{{!song_list.playlist.commentCount && !album.info.shareCount}}">
+          <view>评论</view>
+        </view>
+      </view>
+      <view>
+        <view>
+          <image class="comment-and-share-icon" src="../../../images/songList/share-icon.png"></image>
+        </view>
+        <!-- 如果是从歌单点击进来的要用歌单的数据 -->
+        <view wx:if="{{song_list.playlist.shareCount}}">
+          <view wx:if="{{ song_list.playlist.shareCount == 0 }} ">分享</view>
+          <view wx:else>{{song_list.playlist.shareCount}}</view>
+        </view>
+        <!-- 如果是从专辑点击进来的要用专辑的数据 -->
+        <view wx:if="{{album.info.shareCount}}">
+          <view wx:if="{{ album.info.shareCount == 0 }}">分享</view>
+          <view wx:else>{{album.info.shareCount}}</view>
+        </view>
+        <!-- 如果专辑或者歌单都没有则显示分享 -->
+        <view wx:if="{{!song_list.playlist.shareCount && !album.info.shareCount}}">
+          <view>分享</view>
+        </view>
+      </view>
+      <view>
+        <view>
+          <image class="comment-and-share-icon" src="../../../images/songList/download-icon.png"></image>
+        </view>
+        <view>下载</view>
+      </view>
+      <view>
+        <view>
+          <image class="comment-and-share-icon" src="../../../images/songList/multiple-icon.png"></image>
+        </view>
+        <view>多选</view>
+      </view>
+    </view>
+  </view>
+
+  <songSheetList wx:if="{{show_sheet_list}}" song_list="{{song_list}}" bind:sendPlayBarIndex="getPlayBarIndex"></songSheetList>
+
+</view>
+<view wx:if="{{$.currentSongIndex != -1}}">
+  <playBar playBarIndex="{{playBarIndex}}"></playBar>
+</view>

@@ -1,0 +1,44 @@
+.swiper-box {
+  height: 300rpx;
+  padding: 30rpx;
+  padding-top:20rpx;
+}
+
+.swiper-item {
+  height: 600rpx !important;
+}
+
+.slide-image {
+  width: 100%;
+  border-radius: 14rpx;
+  display: inline-block;
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  margin-top: 10rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.nav-image-box{
+  background: #eee;
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+.nav-image{
+  width: 50rpx;
+  height:50rpx;
+  margin-top:25rpx;
+  z-index: 1;
+}
+.nav-item-title{
+  font-size:24rpx;
+  text-align: center;
+  margin-top:20
+  rpx;
+}

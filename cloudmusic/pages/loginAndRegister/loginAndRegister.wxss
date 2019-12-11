@@ -1,0 +1,41 @@
+.tabBarBox {
+  display: flex;
+  justify-content: space-around;
+  font-size: 28rpx;
+  color: #999;
+  border-bottom: 1rpx solid #eee;
+}
+
+.phone-bar, .email-bar {
+  padding: 20rpx;
+}
+
+.selected {
+  color: #3a3a3a;
+  border-bottom: 6rpx solid red;
+}
+
+.input-box {
+  margin-top: 40rpx;
+}
+
+.login-register-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80rpx;
+  font-size: 26rpx;
+}
+
+.login-btn {
+  color: #fff;
+  padding: 20rpx;
+  background: #9e444d;
+  border-radius: 6rpx;
+}
+
+.register-btn {
+  color: #fff;
+  padding: 20rpx;
+  background: #9e444d;
+  border-radius: 6rpx;
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "songs": "../../../components/singerDetail/songs/songs",
+    "essentialInformation":"essentialInformation/essentialInformation"
+  }
+}

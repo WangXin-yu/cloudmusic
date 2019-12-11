@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-progress": "../../../../lib/vant/progress/index",
+    "van-slider": "../../../../lib/vant/slider/index"
+  },
+  "navigationStyle":"custom"
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "songSheetList":"../../../components/songList/songSheetList/songSheetList",
+    "homePage":"../../../components/singerDetail/homePage/homePage",
+    "songs":"../../../components/singerDetail/songs/songs",
+    "albums":"../../../components/singerDetail/albums/albums",
+    "vedios":"../../../components/singerDetail/vedios/vedios"
+  },
+  "navigationStyle":"custom"
+}

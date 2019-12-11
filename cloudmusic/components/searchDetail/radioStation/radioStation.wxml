@@ -1,0 +1,19 @@
+<view class="radio-box" wx:if="{{radio_station.length > 0 && loading_finished}}">
+  <view class="topic-text">
+    电台
+  </view>
+  <view class="songlist-box">
+    <view class="songlist-item" wx:for="{{radio_station}}" wx:key="{{item.id}}">
+      <image src="{{item.picUrl}}" class="songlist-item-cover"></image>
+      <view class="songlist-item-right">
+        <view class="songlist-item-right-songlist-name">{{item.name}}</view>
+        <view class="songlist-item-other-info">
+          {{item.dj.nickname}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="radio-box" wx:if="{{radio_station.length <= 0 && loading_finished}}">
+  <notFound key_words="{{key_words}}"></notFound>
+</view>

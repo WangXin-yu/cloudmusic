@@ -1,0 +1,272 @@
+<!-- 你可能感兴趣 -->
+<view class="comprehensive-box">
+  <!-- 歌手部分 -->
+  <view wx:if="{{comprehensive_data.artist}}">
+    <view class="interesting-text">你可能感兴趣</view>
+    <view class="singer-box">
+      <image src="{{comprehensive_data.artist.artists[0].img1v1Url}}" class="singer-cover"></image>
+      <view class="singer-detail">
+        <view class="singer-name-box">
+          <view>歌手: </view>
+          <view class="chinese-name"> {{comprehensive_data.artist.artists[0].name}}</view>
+          <view> ({{comprehensive_data.artist.artists[0].alia}})</view>
+        </view>
+        <view class="fans-album-box">
+          <view>粉丝:303.2万</view>
+          <view>歌曲:{{song_count}}</view>
+          <view>专辑:{{album_count}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 专辑部分 -->
+  <view wx:if="{{comprehensive_data.album}}">
+    <view class="album-box">
+      <image src="{{comprehensive_data.album.albums[0].blurPicUrl}}" class="album-cover"></image>
+      <view class="singer-detail">
+        <view class="singer-name-box">
+          <view class="album-text">专辑: </view>
+          <view class="album-singers-item"> {{comprehensive_data.album.albums[0].name}}</view>
+          <view class="album-singers">
+            (
+            <view wx:for="{{comprehensive_data.album.albums[0].artists}}" class="album-singers-item" wx:key="{{index.id}}">
+              {{item.name}}
+            </view>)
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 单曲部分 -->
+  <view wx:if="{{comprehensive_data.song}}">
+    <view class="top-single-song">
+      <view class="single-text">单曲</view>
+      <view>
+        <view></view>
+        <view class="play-all-box">
+          <image src="../../../images/searchDetailsIcons/comprehensive/play.png" class="play-icon"></image>
+          <view> 播放全部</view>
+        </view>
+      </view>
+    </view>
+    <view class="single-song-box">
+      <view wx:for="{{comprehensive_data.song.songs}}" wx:key="{{index.idd}}" class="single-song-item" bindtap="goToPlaySong" data-privilege="{{item.privilege}}">
+        <view>
+          <view>{{item.name}}</view>
+          <view class="singers-and-album-box">
+            <view class="singers-and-album-container">
+              <view wx:for="{{item.ar}}" wx:for-item="singer_item" class="singer_item" wx:key="{{singer_item.id}}">
+                <view wx:if="{{index > 0 || index < item.ar.length-1}}" class="singer_item">/</view>
+                {{singer_item.name}}
+              </view>
+              <view class="singer_item-al-name">-{{item.al.name}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="mv-and-more-icon">
+          <image class="mv-icon" src="../../../images/songList/mv-icon.png"></image>
+          <image class="more-icon" src="../../../images/songList/more-icon.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="other-songs-count" bindtap="goToSingleSong" wx:if="{{comprehensive_data.song.moreText}}">
+      <view>{{comprehensive_data.song.moreText}}</view>
+      <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow-icon"></image>
+    </view>
+  </view>
+  <!-- 歌单部分 -->
+  <view wx:if="{{comprehensive_data.playList}}">
+    <view class="songlist-box">
+      <view class="songlist-text">歌单</view>
+      <view class="songlist-item" wx:for="{{comprehensive_data.playList.playLists}}" wx:key="{{item.id}}" bindtap="goToRecommandList" data-id="{{item.id}}">
+        <image src="{{item.coverImgUrl}}" class="songlist-item-cover"></image>
+        <view class="songlist-item-right">
+          <view class="songlist-item-right-songlist-name">{{item.name}}</view>
+          <view class="songlist-item-other-info">
+            <view>{{item.trackCount}}首</view>
+            <view class="nickname"> by {{item.creator.nickname}}</view>
+            <view>播放{{item.playCount}}次</view>
+          </view>
+        </view>
+      </view>
+      <view class="other-songs-count" bindtap="goToSongList">
+        <view>{{comprehensive_data.playList.moreText}}</view>
+        <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow-icon"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 视频部分 -->
+  <view wx:if="{{comprehensive_data.video}}">
+    <view class="vedio-box">
+      <view class="vedio-text">视频</view>
+      <view wx:for="{{comprehensive_data.video.videos}}" wx:key="{{item.id}}" class="vedio-item">
+        <image class="vedio-item-cover" src="{{item.coverUrl}}"></image>
+        <view class="vedio-item-right-other-info">
+          <view class="vedio-item-right-other-info-title">
+            <view class="vedio-item-right-other-info-mv" wx:if="{{item.creator[0].userName==key_words}}">MV</view>
+            {{item.title}}
+          </view>
+          <view class="vedio-item-right-other-info-playTime-username">
+            <view>{{item.playTime}}</view>
+            <view>by{{item.creator[0].userName}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="other-songs-count" wx:if="{{comprehensive_data.video.moreText}}" bindtap="goToVideo">
+        <view>{{comprehensive_data.video.moreText}}</view>
+        <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow-icon"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 相关搜索 -->
+  <view wx:if="{{comprehensive_data.sim_query}}">
+    <view class="sim_query-text">相关搜索</view>
+    <view class="sim_query-box">
+      <view wx:for="{{comprehensive_data.sim_query.sim_querys}}" wx:key="{{index.id}}" class="sim_query-item">
+        {{item.keyword}}
+      </view>
+    </view>
+  </view>
+  <!-- Mlog -->
+  <view wx:if="{{comprehensive_data.mlog}}">
+    <view class="mlog-text">Mlog</view>
+    <view class="mlog-box">
+      <view wx:for="{{comprehensive_data.mlog.mlogs}}" wx:key="{{index.id}}" class="mlog-item">
+        <image src="{{item.resource.mlogBaseData.coverUrl}}" class="mlog-item-cover"></image>
+        <view class="mlog-item-bottom-box">
+          <view class="mlog-item-title">{{item.resource.mlogBaseData.talk.talkName}}</view>
+          <view class="mlog-item-creator-box">
+            <view class="mlog-item-creator-left">
+              <image src="{{item.resource.userProfile.avatarUrl}}" class="mlog-item-creator-avator"></image>
+              <view class="mlog-item-creator-username">{{item.resource.userProfile.nickname}}</view>
+            </view>
+            <view class="mlog-item-likedCount">{{item.resource.mlogExtVO.likedCount}}赞</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="other-songs-count" wx:if="{{comprehensive_data.mlog.moreText}}">
+      <view>{{comprehensive_data.mlog.moreText}}</view>
+      <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow-icon"></image>
+    </view>
+  </view>
+  <!-- 主题部分. -->
+  <view wx:if="{{comprehensive_data.talk}}">
+    <view class="topic-text">
+      主题
+    </view>
+    <view class="topic-box">
+      <view class="topic-item" wx:for="{{comprehensive_data.talk.talks}}" wx:key="{{item.id}}">
+        <image src="{{item.showCover.url}}" class="songlist-item-cover"></image>
+        <view class="topic-item-right">
+          <view class="topic-item-right-songlist-name">{{item.talkName}}</view>
+          <view class="topic-item-other-info">
+            <view>{{item.follows}}人关注 </view>
+            <view class="topic-item-other-info-line"> | </view>
+            <view> {{item.participations}}参与</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 歌手 -->
+  <view wx:if="{{comprehensive_data.artist}}">
+    <view class="topic-text">
+      歌手
+    </view>
+    <view class="singer-box">
+      <image src="{{comprehensive_data.artist.artists[0].img1v1Url}}" class="singer-cover-singer-part"></image>
+      <view class="singer-detail">
+        <view class="singer-name-box">
+          <view class="chinese-name"> {{comprehensive_data.artist.artists[0].name}}</view>
+          <view> ({{comprehensive_data.artist.artists[0].alia}})</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 专辑部分 -->
+  <view wx:if="{{comprehensive_data.album}}">
+    <view class="topic-text">
+      专辑
+    </view>
+    <view class="songlist-box">
+      <view class="songlist-item" wx:for="{{comprehensive_data.album.albums}}" wx:key="{{item.id}}">
+        <view class="album-pic-box">
+          <image src="{{item.picUrl}}" class="songlist-item-cover"></image>
+          <image class="album-bg" src="../../../images/searchDetailsIcons/comprehensive/album-bg.png"></image>
+        </view>
+
+
+        <view class="songlist-item-right">
+          <view class="songlist-item-right-songlist-name">{{item.name}}</view>
+          <view class="songlist-item-other-info albums-name-list">
+            {{item.artist.name}}
+          </view>
+        </view>
+      </view>
+      <view class="other-songs-count" wx:if="{{comprehensive_data.album.moreText}}" bindtap="goToAlbum">
+        <view>{{comprehensive_data.album.moreText}}</view>
+        <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow-icon"></image>
+      </view>
+    </view>
+  </view>
+  <!--  电台部分-->
+  <view wx:if="{{comprehensive_data.djRadio}}">
+    <view class="topic-text">
+      电台
+    </view>
+    <view class="songlist-box">
+      <view class="songlist-item" wx:for="{{comprehensive_data.djRadio.djRadios}}" wx:key="{{item.id}}">
+        <image src="{{item.picUrl}}" class="songlist-item-cover"></image>
+        <view class="songlist-item-right">
+          <view class="songlist-item-right-songlist-name">{{item.name}}</view>
+          <view class="songlist-item-other-info">
+            {{item.desc}}
+          </view>
+        </view>
+      </view>
+    </view>
+     <view class="other-songs-count" wx:if="{{comprehensive_data.djRadio.moreText}}" bindtap="goToStation">
+        <view>{{comprehensive_data.djRadio.moreText}}</view>
+        <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow-icon"></image>
+      </view>
+  </view>
+  <!-- 用户部分 -->
+  <view wx:if="{{comprehensive_data.user}}">
+    <view class="topic-text">
+      用户
+    </view>
+    <view class="singer-box">
+      <image src="{{comprehensive_data.user.users[0].avatarUrl}}" class="singer-cover-singer-part"></image>
+      <view class="singer-detail">
+        <view class="singer-name-box username-box">
+          <view class="chinese-name username">
+            <view class="nickname">{{comprehensive_data.user.users[0].nickname}}</view>
+            <view wx:if="{{comprehensive_data.user.users[0].gender == 1}}">
+              <!-- 显示男性图标 -->
+              -
+              <image src="../../../images/searchDetailsIcons/comprehensive/male.png" class="gender-icon"></image>
+            </view>
+            <view wx:else>
+              <!-- 显示女性图标 -->
+              -
+              <image src="../../../images/searchDetailsIcons/comprehensive/male.png" class="gender-icon"></image>
+            </view>
+          </view>
+
+          <view class="follow-btn">
+            <image src="../../../images/searchDetailsIcons/comprehensive/add-follows.png" class="add-to-follow"></image>
+            <view>关注</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="other-songs-count" wx:if="{{comprehensive_data.user.moreText}}" bindtap="goToUser">
+      <view>{{comprehensive_data.user.moreText}}</view>
+      <image src="../../../images/searchDetailsIcons/comprehensive/arrow.png" class="arrow-icon"></image>
+    </view>
+  </view>
+    <view wx:if="{{loading_finished && comprehensive_data.order.length <= 0}}">
+    <notFound key_words="{{key_words}}"></notFound>
+  </view>
+</view>

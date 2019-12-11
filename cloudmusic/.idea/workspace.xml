@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d16b179-216f-44a0-bd73-406f1edb470e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../test1/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/app.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/components/navHeader/navHeader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/components/navHeader/navHeader.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/components/navHeader/navHeader.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/components/navHeader/navHeader.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/images/home-page-pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/images/home-page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/images/my-pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/images/my.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/lib/fly/wx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/lib/wxParse/html2json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/lib/wxParse/htmlparser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/lib/wxParse/showdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/lib/wxParse/wxDiscode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/lib/wxParse/wxParse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/lib/wxParse/wxParse.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/lib/wxParse/wxParse.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/detail/detail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/detail/detail.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/detail/detail.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/detail/detail.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/first-page/first-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/first-page/first-page.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/first-page/first-page.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/first-page/first-page.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/index/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/index/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/index/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/index/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/logs/logs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/logs/logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/logs/logs.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/logs/logs.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/my/my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/my/my.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/my/my.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/pages/my/my.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/project.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/sitemap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test1/utils/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/callback/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/callback/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/callback/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/echo/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/echo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/echo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/login/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/login/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/login/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/openapi/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/openapi/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/cloudfunctions/openapi/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/app.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/components/chatroom/chatroom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/components/chatroom/chatroom.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/components/chatroom/chatroom.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/components/chatroom/chatroom.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/components/chatroom/dots.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/components/chatroom/photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/images/code-cloud-callback-config.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/images/code-db-inc-dec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/images/code-db-onAdd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/images/code-db-onQuery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/images/code-db-onRemove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/images/code-func-sum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/images/console-entrance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/images/create-collection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/addFunction/addFunction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/addFunction/addFunction.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/addFunction/addFunction.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/addFunction/addFunction.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/chooseLib/chooseLib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/chooseLib/chooseLib.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/chooseLib/chooseLib.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/chooseLib/chooseLib.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/databaseGuide/databaseGuide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/databaseGuide/databaseGuide.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/databaseGuide/databaseGuide.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/databaseGuide/databaseGuide.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/deployFunctions/deployFunctions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/deployFunctions/deployFunctions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/deployFunctions/deployFunctions.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/deployFunctions/deployFunctions.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/im.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/im.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/im.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/im.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/room/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/room/room.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/room/room.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/room/room.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/im/room/room.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/index/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/index/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/index/index.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/index/index.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/index/user-unlogin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/callback/callback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/callback/callback.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/callback/callback.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/callback/callback.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/cloudid/cloudid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/cloudid/cloudid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/cloudid/cloudid.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/cloudid/cloudid.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/openapi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/openapi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/openapi.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/openapi.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/serverapi/serverapi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/serverapi/serverapi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/serverapi/serverapi.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/openapi/serverapi/serverapi.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/storageConsole/storageConsole.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/storageConsole/storageConsole.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/storageConsole/storageConsole.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/storageConsole/storageConsole.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/userConsole/userConsole.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/userConsole/userConsole.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/userConsole/userConsole.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/pages/userConsole/userConsole.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/sitemap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/miniprogram/style/guide.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test2/project.config.json" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/homePage/homePage.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/homePage/homePage.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/homePage/homePage.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pages/homePage/homePage.wxml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/cloudmusic.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1617" />
+    <option name="height" value="853" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cloudmusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloudmusic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloudmusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloudmusic" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cloudmusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cloudmusic" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="homePage" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d16b179-216f-44a0-bd73-406f1edb470e" name="Default Changelist" comment="" />
+      <created>1574644269263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574644269263</updated>
+      <workItem from="1574644273090" duration="419000" />
+      <workItem from="1574758274033" duration="134000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="553000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24968314" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Quokka" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="GraphQL" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.27725437" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pages/homePage/homePage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/homePage/homePage.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/homePage/homePage.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

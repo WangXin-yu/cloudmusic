@@ -1,0 +1,14 @@
+<view class="recommand-radio-station-top-box">
+  <view class="recommand-radio-station-title">推荐电台</view>
+  <view class="radio-square">
+    电台广场
+  </view>
+</view>
+<view class="recommand-radio-station-box">
+  <view wx:for="{{djprogram}}" wx:key="{{index.id}}" class="recommand-radio-station-item" bindtap="goToRadioStationDetail" data-id="{{item.program.radio.id}}">
+    <view>
+      <image src="{{item.picUrl}}" lazy-load class="recommand-radio-station-image"></image>
+    </view>
+    <view class="describe">{{item.name}}</view>
+  </view>
+</view>

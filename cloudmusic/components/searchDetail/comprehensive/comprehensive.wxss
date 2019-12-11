@@ -1,0 +1,402 @@
+.comprehensive-box {
+  padding: 30rpx;
+  color: #333;
+  font-family: "Microsoft YaHei";
+  font-size: 28rpx;
+}
+
+.interesting-text {
+  font-size: 26rpx;
+  color: #808080;
+}
+
+.singer-box, .album-box {
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.singer-cover, .album-cover {
+  height: 120rpx;
+  width: 120rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  /* font-size: 32rpx; */
+}
+
+.singer-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.singer-name-box {
+  display: flex;
+  /* font-size: 32rpx; */
+}
+
+
+.fans-album-box {
+  display: flex;
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 10rpx;
+}
+
+.album-singers {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: flex;
+  max-width: 380rpx;
+}
+.album-singers-item{
+  max-width: 190rpx;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+  overflow: hidden;
+}
+/* 单曲部分的css */
+
+.single-text, .songlist-text, .vedio-text, .sim_query-text, .mlog-text, .topic-text {
+  font-size: 32rpx;
+  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 30rpx;
+  margin-top: 40rpx;
+}
+
+.top-single-song {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60rpx;
+}
+
+.play-all-box {
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  border: 1rpx solid #ccc;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+}
+
+.play-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+
+.single-song-item {
+  margin: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: cneter;
+  margin-bottom: 50rpx;
+}
+
+.singer_item {
+  display: flex;
+  max-width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.singer_item-al-name{
+   max-width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.singers-and-album-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 10rpx;
+}
+
+.mv-and-more-icon {
+  display: flex;
+  align-items: center;
+}
+
+.mv-icon, .more-icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.mv-icon {
+  margin-right: 40rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.singers-and-album-container {
+  display: flex !important;
+}
+
+.other-songs-count {
+  font-size: 24rpx;
+  color: #808080;
+  text-align: center;
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+/* 歌单部分 */
+
+.songlist-item-cover {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+
+.songlist-item {
+  display: flex;
+  margin: 20rpx 0;
+}
+
+.songlist-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rpx;
+}
+
+.songlist-item-other-info {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 22rpx;
+  color: #808080;
+  max-width: 480rpx;
+}
+songlist-item-other-info .nickname{
+  max-width: 200rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 10rpx;
+}
+
+.songlist-item-right-songlist-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 480rpx;
+  margin-bottom: 20rpx;
+}
+
+/* 视频部分 */
+
+.vedio-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 0;
+}
+
+.vedio-item-cover {
+  width: 280rpx;
+  height: 160rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+
+.vedio-item-right-other-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 480rpx;
+}
+
+.vedio-item-right-other-info-title {
+  display: flex;
+  align-items: center;
+}
+
+.vedio-item-right-other-info-mv {
+  height: 28rpx;
+  width: 40rpx;
+  border: 1rpx solid #ff3030;
+  padding: 0 4rpx;
+  font-size: 18rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: #ff3030;
+  border-radius: 4rpx;
+  margin-right: 10rpx;
+}
+
+.vedio-item-right-other-info-playTime-username {
+  display: flex;
+  font-size: 24rpx;
+  color: #808080;
+  margin-top: 20rpx;
+}
+
+/* 相关搜索部分 */
+
+.sim_query-box {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 26rpx;
+}
+
+.sim_query-item {
+  padding: 10rpx 16rpx;
+  background: #eee;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+/* mlog部分 */
+
+.mlog-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mlog-item-cover {
+  width: 330rpx;
+  height: 330rpx;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  display: block;
+}
+
+.mlog-item-bottom-box {
+  width: 330rpx;
+  height: 150rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px #ccc,
+              0 0 0 #ccc,
+              0 0 10px#ccc,
+              0 0 10px #ccc
+}
+
+.mlog-item-title {
+  font-size: 26rpx;
+  margin-bottom: 20rpx;
+}
+
+.mlog-item-creator-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mlog-item-creator-avator {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
+.mlog-item-creator-left {
+  display: flex;
+  align-items: center;
+}
+
+.mlog-item-creator-username, .mlog-item-likedCount {
+  font-size: 24rpx;
+  color: #808080;
+}
+
+/* 主题部分 */
+.songlist-item-cover{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+
+.topic-item {
+  display: flex;
+  margin: 20rpx 0;
+}
+
+.topic-item-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rpx;
+}
+
+.topic-item-other-info {
+  display: flex;
+  font-size: 26rpx;
+  color: #808080;
+}
+
+.topic-item-right-songlist-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 480rpx;
+  margin-bottom: 20rpx;
+}
+.topic-item-other-info-line{
+  margin: 0 20rpx;
+  color: #eee;
+}
+.singer-cover-singer-part{
+  width: 180rpx;
+  height:180rpx;
+  border-radius: 50%;
+  margin-right:20rpx;
+}
+.gender-icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+.follow-btn{
+  color: #ff3a3a;
+  font-size: 24rpx;
+  border:1rpx solid #ff3a3a;
+  border-radius: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rpx 20rpx;
+}
+.add-to-follow{
+  width:30rpx;
+  height:30rpx;
+  margin-right:4rpx;
+}
+.username-box{
+  width:500rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.nickname{
+  max-width: 300rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.username{
+  /* width: 200rpx; */
+  display: flex;
+}
+.albums-name-list{
+  display: flex;
+}
+.album-pic-box{
+  display: flex;
+}
+.album-bg{
+  height:180rpx;
+  width: 40rpx;
+}
